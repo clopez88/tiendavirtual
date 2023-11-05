@@ -257,18 +257,18 @@
             </select><br><br>
 
             <button type="submit" name="enviar">Enviar</button>
-            <button type="button" id="cancelar" onclick="limpiarFormulario()">Cancelar</button>
+            <button type="button" name="cancelar" onclick="limpiarFormulario()">Cancelar</button>
         </form>
     </section>
 
     <script>
-        function limpiarFormulario() {
-            // Limpiar los campos del formulario
-            document.getElementsByName('nombres').value = '';
-            document.getElementsByName('correo').value = '';
-            document.getElementsByName('telefono').value = '';
-            document.getElementsByName('servicio').value = 'Personalización';
-        }
+    function limpiarFormulario() {
+        // Limpiar los campos del formulario
+        document.getElementsByName('nombres')[0].value = '';
+        document.getElementsByName('correo')[0].value = '';
+        document.getElementsByName('telefono')[0].value = '';
+        document.getElementsByName('servicio')[0].value = 'Personalización';
+    }
     </script>
 
     <footer>
